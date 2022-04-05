@@ -157,8 +157,19 @@
   .menu li a{
     color: var(--cor-0);
     font-size: 1.2rem;
+  }  
+}
+
+@media (max-width: 400px){
+  
+  .header{
+    grid-template-columns: minmax(100px,1fr) 1fr 1fr;
   }
 
+  .menu-item .button{
+    display: none;
+  }
+  
   .menu li:last-child::after{
     content: "Login";
     display: block;
@@ -169,22 +180,9 @@
     cursor: pointer;
     font-size: 1.2rem;
   }
-
+  
   
   .menu li:hover:last-child::after{
     background: #171717 ;
   }
-
-}
-
-@media (max-width: 400px){
-
-.header{
-  grid-template-columns: minmax(100px,1fr) 1fr 1fr;
-}
-
-.menu-item .button{
-  display: none;
-}
-
 }
