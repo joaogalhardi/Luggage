@@ -1,0 +1,22 @@
+:root{
+  --cor-0:#ffffff;
+  --cor-1:#000000;
+  --cor-2:rgba(0, 0, 0, 0.6);
+  --cor-3:#ff7d43;
+}
+
+.cor-0{
+  color: var(--cor-0);
+}
+
+.cor-1{
+  color: var(--cor-1);
+}
+
+.cor-2{
+  color: var(--cor-2);
+}
+
+.cor-3{
+  color: var(--cor-3);
+}
