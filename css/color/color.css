@@ -3,6 +3,7 @@
   --cor-1:#000000;
   --cor-2:rgba(0, 0, 0, 0.6);
   --cor-3:#ff7d43;
+  --cor-4:rgba(0, 0, 0, 0.7);
 }
 
 .cor-0{
@@ -19,4 +20,8 @@
 
 .cor-3{
   color: var(--cor-3);
+}
+
+.cor-4{
+  color: var(--cor-4);
 }
