@@ -1,7 +1,6 @@
 .products-bg{
   padding-top: 60px;
   padding-bottom: 50px;
-  overflow-x: hidden;
 }
 
 .products p{
@@ -99,6 +98,22 @@
   .list-main-products{
     grid-template-columns: repeat(6, minmax(280px, 1fr));
     overflow-x: auto;
+  }
+}
+
+@media (max-width:700px){
+
+  .products-bg{
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .products{
+    text-align: center;
+  }
+
+  .products p{
+    max-width: none;
   }
 }
 
