@@ -88,9 +88,10 @@
       width: 20px;
       height: 2px;
       border-radius: 4px;
-      background: var(--cor-3);
+      background: var(--cor-1);
       position: relative;
       cursor: pointer;
+      z-index: 3;
     }
     
     #hamburguer::before{
@@ -99,7 +100,7 @@
       top: -6px;
       width: 20px;
       height: 2px;
-      background: var(--cor-3);
+      background: var(--cor-1);
       border-radius: 4px;
     }
     
@@ -109,7 +110,7 @@
       top: 6px;
       width: 20px;
       height: 2px;
-      background: var(--cor-3);
+      background: var(--cor-1);
       border-radius: 4px;
     }
 
@@ -122,10 +123,14 @@
 
     nav.active #mobile-menu #hamburguer::before {
       transform: rotate(135deg);
+      position: fixed;
+      margin-top: 70px;
     }
     nav.active #mobile-menu #hamburguer::after {
       transform: rotate(-135deg);
       top: -6px;
+      position: fixed;
+      margin-top: 70px;
     }
   
   /* sidebar */
@@ -136,9 +141,9 @@
     justify-content: center;
     text-align: center;
     position: absolute;
-    padding-top: 60px;
+    padding-top: 100px;
     width: 40%;
-    top: 102px;
+    top: 0px;
     right: 0px;
     background: var(--cor-3);
     box-shadow: 1px 1px 5px #000000;
@@ -152,6 +157,7 @@
     transform: translateX(0px);
     visibility: visible;
     z-index: 1;
+    position: fixed;
   }
 
   .menu li a{

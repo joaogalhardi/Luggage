@@ -1,0 +1,109 @@
+.products-bg{
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.products p{
+  margin-top: 24px;
+  max-width: 530px;
+}
+
+.arrow{
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.arrowLeft , .arrowRight{
+  cursor: pointer;
+}
+
+.list-main-products{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat( 3, minmax( 200px, 1fr));
+  gap: 20px 24px;
+}
+
+.list-main-products ul{
+  display: grid;
+  justify-content: center;
+  background: var(--cor-0);
+  gap: 20px;
+  padding: 30px 50px 30px 50px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  position: relative;
+  transition: .3s ease-in;
+  cursor: pointer;
+}
+
+.list-main-products ul:hover{
+  border-color: var(--cor-3);
+}
+
+
+.list-main-products ul::before{
+  content: "";
+  display: flex;
+  top: 40px;
+  right: 40px;
+  position: absolute;
+  justify-self: end;
+  width: 24px;
+  height: 24px; 
+  background: url("../../images/itens/heart.svg");
+  cursor: pointer;
+}
+
+.list-main-products .list2::before{
+  content: "";
+  display: flex;
+  top: 40px;
+  right: 40px;
+  position: absolute;
+  justify-self: end;
+  width: 24px;
+  height: 24px; 
+  background: url("../../images/itens/heart-color.svg") no-repeat;
+  cursor: pointer;
+}
+
+.list-main-products ul li>img{
+ margin: 0 auto;
+}
+
+
+.list-main-products ul li>span{
+  display: flex;
+  gap: 0px 17px;
+}
+
+
+.list-main-products ul li>span::after{
+  content: "(420 reviews)";
+  align-self: center;
+  font: 400 0.875rem/1 "Montserrat", sans-serif;
+  color: var(--cor-4) ;
+}
+
+.list-main-products ul:nth-child(n + 4){
+  display: none;
+}
+
+@media (max-width:750px){
+  .list-main-products ul:nth-child(n + 4){
+    display: grid;
+  }
+  .list-main-products{
+    grid-template-columns: repeat(6, minmax(280px, 1fr));
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+}
+
+
+
+
+
