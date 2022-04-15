@@ -1,4 +1,3 @@
-
 const btnMobile = document.querySelector("#mobile-menu");
 const nav = document.querySelector("nav");
 const links = document.querySelectorAll('.menu li')
