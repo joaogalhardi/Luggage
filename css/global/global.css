@@ -33,3 +33,17 @@ img {
   padding: 0 20px;
   margin: 0 auto;
 }
+
+.botao{
+  display: flex;
+  text-align: left;
+  padding: 16px 32px;
+  border: 1px solid var(--cor-1);
+  justify-self: start;
+  font: 400 1.125rem/1 "Ropa Sans", sans-serif;
+  transition: 0.3s;
+}
+
+.botao:hover{
+  border-color: var(--cor-3);
+}

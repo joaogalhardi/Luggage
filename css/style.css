@@ -13,3 +13,6 @@
 /* products */
 @import "./products/products.css";
 
+/* services */
+@import "./services/services.css";
+

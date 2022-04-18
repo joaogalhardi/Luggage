@@ -101,6 +101,7 @@
   padding: 8px 16px;
   align-items: center;
   gap: 10px;
+  transition: 0.3s;
 }
 
 .btn-2::before {
@@ -151,7 +152,7 @@
   }
   
   .about h1{
-    font-size: 3.5rem;
+    font-size: 3.8rem;
   }
 
   .about p{
