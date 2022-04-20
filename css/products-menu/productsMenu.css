@@ -1,0 +1,114 @@
+.productsMenu-bg{
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.productsMenu p{
+  margin-top: 24px;
+  max-width: 530px;
+}
+
+.productsMenu-bg div:nth-child(3){
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  align-self: center;
+}
+
+.productsMenu-bg div>a{
+  padding: 16px 32px;
+  font: 400 1.125rem/1 "Ropa Sans", sans-serif;
+  background-color: var(--cor-3);
+  color: var(--cor-0);
+}
+.productsMenu-bg div>a:hover{
+  background: #ff8955;
+  cursor: pointer;
+}
+
+.list-main-productsMenu{
+  display: grid;
+  grid-template-columns: repeat(4,minmax(282px, 1fr));
+  margin-top: 60px;
+  gap: 24px;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.list-main-productsMenu + .list-main-productsMenu  {
+  margin-top: 40px;
+}
+
+.list-main-productsMenu .menulist1 li>span{
+  position: relative;
+}
+
+.list-main-productsMenu .menulist1 li>span::after{
+  content: "(420 reviews)";
+  display: block;
+  position: absolute;
+  right: -20px;
+  top: 10px;
+  font: 400 0.875rem/1 "Montserrat", sans-serif;
+  color: var(--cor-4) ;
+}
+
+.menulist1{
+  display: grid;
+  width: 282px;
+  padding: 20px 70px;
+  background: linear-gradient(#EEF1F6 58%, #ffffff 42%);
+  gap: 20px;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+  transition: .3s ease-in;
+}
+
+.menulist1:hover{
+  border-color: var(--cor-3);
+  cursor: pointer;
+}
+
+.menulist1 li{
+  display: grid;
+  align-items: end;
+}
+
+.menulist1 li>img{
+  display: grid;
+  align-self: start;
+  height: 100%;
+}
+
+@media (max-width:1250px){
+  .list-main-productsMenu{
+    display: flex;
+    flex: 1 1 282px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width:750px){
+  .productsMenu{
+    text-align: center;
+  }
+
+  .productsMenu p{
+    max-width: none;
+  }
+}
+
+
+@media (max-width:380px){
+
+  .list-main-productsMenu .menulist1 li>span::after{
+    right: -35px;
+    top: 10px;
+    font: 400 0.875rem/1 "Montserrat", sans-serif;
+    color: var(--cor-4) ;
+  }
+
+}
+
+

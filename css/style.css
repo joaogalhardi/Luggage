@@ -16,3 +16,6 @@
 /* services */
 @import "./services/services.css";
 
+/* products menu */
+@import "./products-menu/productsMenu.css";
+
