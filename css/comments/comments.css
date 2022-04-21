@@ -1,0 +1,95 @@
+.comments-bg{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.comments{
+  text-align: center;
+}
+
+.comments p{
+  margin-top: 24px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.comments h2{
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.overallReview{
+  display: flex;
+  flex: 1 1 382px;
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.review1, .review2, .review3{
+  display: grid;
+  background: #EEF1F6;
+  padding: 36px 24px;
+}
+
+.review1 p, .review2 p, .review3 p{
+  display: grid;
+  text-align: left;
+  font: 400 1rem/1.5 "Montserrat", sans-serif;
+  color: var(--cor-4);
+  position: relative;
+}
+
+.review1 p:nth-child(1)::before, .review2 p:nth-child(1):before, .review3 p:nth-child(1):before {
+  content: "";
+  display: flex;
+  align-self: center;
+  position: absolute;
+  top: -15px;
+  left: -12px;
+  width: 16px;
+  height: 14px;
+  background: url("../../images/itens/aspas1.svg") no-repeat;
+}
+.review1 p:nth-child(1):after, .review2 p:nth-child(1):after, .review3 p:nth-child(1):after {
+  content: "";
+  display: flex;
+  position: absolute;
+  justify-self: end;
+  top: 90px;
+  right: 90px;
+  align-self: start;
+  width: 16px;
+  height: 14px;
+  background: url("../../images/itens/aspas2.svg") no-repeat;
+}
+
+
+.review1 .p1, .review2 .p2, .review3 .p3{
+  font: 500 1rem/1.5 "Montserrat", sans-serif;
+  color: var(--cor-1);
+  margin-top: 26px;
+}
+
+.review1 span, .review2 span, .review3 span{
+  font: 400 0.75rem/1.5 "Montserrat", sans-serif;
+  color: var(--cor-4);
+  margin-top: 4px;
+}
+
+@media (max-width:1300px){
+  .review1 p:nth-child(1):after, .review2 p:nth-child(1):after, .review3 p:nth-child(1):after {
+    content: "";
+    display: flex;
+    justify-self: end;
+    align-self: start;
+    position: static;
+  }
+}
+
+@media (max-width:750px){
+  .overallReview{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}

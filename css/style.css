@@ -19,3 +19,6 @@
 /* products menu */
 @import "./products-menu/productsMenu.css";
 
+/* comments */
+@import "./comments/comments.css";
+
