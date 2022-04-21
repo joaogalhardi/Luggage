@@ -54,6 +54,14 @@
   font: 400 1.25rem/1.5 "Montserrat", sans-serif;
 }
 
+.font-1-contact{
+  font: 700 2.8rem/1.5 "Poppins", sans-serif;
+}
+
+.font-2-contact{
+  font: 400 1rem/1.5 "Montserrat", sans-serif;
+}
+
 .font-1-footer{
   font: 500 0.875rem/1 "Montserrat", sans-serif;
 }

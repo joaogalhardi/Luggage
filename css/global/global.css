@@ -40,6 +40,11 @@ img {
   margin: 0 auto;
 }
 
+.container3{
+  max-width: 788px;
+  margin: 0 auto;
+}
+
 .botao{
   display: flex;
   text-align: left;
