@@ -16,15 +16,6 @@
   text-align: center;
 }
 
-.contact h2::before{
-  content: "";
-
-}
-
-.contact h2::after{
-  
-}
-
 .contact div p{
   max-width: 336px;
   text-align: center;
@@ -89,6 +80,7 @@
 
   .contact .form input{
     outline: none;
+    background: var(--cor-4);
   }
 
   .contact .form input::placeholder{
@@ -96,10 +88,14 @@
     text-align: center;
   }
 
-  .contact .form button{
-    margin-top: 10px;
-    width: 100%;
+  
+  .contact .form::after{
+    display: none;
   }
 
+  .contact .form button{
+    width: 100%;
+  }
   
+
 }
