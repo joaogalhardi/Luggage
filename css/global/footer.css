@@ -1,6 +1,6 @@
 .footer-bg{
   padding-top: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   background: #f7f7f7;
 }
 
@@ -58,7 +58,7 @@
   justify-content: center;
   align-items: center;
   padding: 10px 0px;
-  gap: 50px;
+  border-top: 1px solid var(--cor-0);
 }
 
 @media (max-width:850px){
@@ -73,7 +73,8 @@
 }
 @media (max-width:450px){
   .footer{
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: left;
     gap: 30px;
   }
 }
