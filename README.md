@@ -15,7 +15,7 @@
 
 # See the project
 
-- <strong>Click here:</strong> https://joaogalhardi.github.io/luggage/
+- <strong>Click here:</strong> https://joaogalhardi.github.io/Luggage/
 
 
 ---
