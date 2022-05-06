@@ -4,26 +4,25 @@
   position: relative;
 }
 
-.about-bg::before{
+.about-bg::before {
   content: "";
   position: absolute;
   left: 2%;
   top: 75%;
   width: 33px;
   height: 31px;
-  background: url("../images/itens/Ellipse1.svg");
+  background: url("../../images/itens/Ellipse1.svg");
 }
 
-.about-bg::after{
+.about-bg::after {
   content: "";
   position: absolute;
   left: 40%;
   top: 88%;
   width: 34px;
   height: 38px;
-  background: url("../images/itens/Ellipse2.svg");
+  background: url("../../images/itens/Ellipse2.svg");
 }
-
 
 .about {
   display: grid;
@@ -52,14 +51,14 @@
   position: relative;
 }
 
-.about .scroll{
-  position: absolute; 
+.about .scroll {
+  position: absolute;
   left: 50%;
   bottom: 120px;
-  animation: scrollbottom .5s ease-in-out 0s infinite alternate; 
+  animation: scrollbottom 0.5s ease-in-out 0s infinite alternate;
 }
 
-@keyframes scrollbottom { 
+@keyframes scrollbottom {
   from {
     bottom: 110px;
   }
@@ -109,7 +108,7 @@
   display: block;
   width: 20px;
   height: 20px;
-  background: url("../images/itens/play.svg") no-repeat;
+  background: url("../../images/itens/play.svg") no-repeat;
 }
 
 .btn-2:hover {
@@ -127,89 +126,84 @@
   height: 100%;
 }
 
-@media (max-width:1500px){
-  .about-bg::before{
+@media (max-width: 1500px) {
+  .about-bg::before {
     display: none;
   }
-  
-  .about-bg::after{
-    display: none;
-  }
-}
 
-@media (max-width:1300px){
- 
-
-  .about .scroll{
+  .about-bg::after {
     display: none;
   }
 }
 
-@media (max-width:1150px){
-  
-  .about{
+@media (max-width: 1300px) {
+  .about .scroll {
+    display: none;
+  }
+}
+
+@media (max-width: 1150px) {
+  .about {
     gap: 0px 45px;
   }
-  
-  .about h1{
+
+  .about h1 {
     font-size: 3.8rem;
   }
 
-  .about p{
+  .about p {
     font-size: 1.2rem;
   }
 }
 
-@media (max-width:800px){
-  
-  .about{
+@media (max-width: 800px) {
+  .about {
     place-items: center;
   }
 
   /* .about h1{
     font-size: 3rem;
   } */
-  
+
   .about .dashed-arrow {
     justify-self: center;
     grid-column: 1/-1;
   }
-  
-  .btn-list{
+
+  .btn-list {
     justify-self: center;
     grid-column: 1/-1;
   }
 }
 
-@media (max-width: 700px){
-  .intro-picture{
+@media (max-width: 700px) {
+  .intro-picture {
     display: none;
   }
- 
-  .about{
+
+  .about {
     grid-template-columns: 1fr;
     grid-template-areas:
       "h1 h1"
       "p  p"
       "button button"
       "arrow arrow";
-      gap: 0px;
+    gap: 0px;
   }
 
-  .about h1, .about p{
+  .about h1,
+  .about p {
     text-align: center;
   }
-
 }
 
-@media (max-width: 400px){
-
+@media (max-width: 400px) {
   .about-bg {
     padding-top: 15px;
     padding-bottom: 30px;
   }
 
-  .about .dashed-arrow{
+  .about .dashed-arrow {
     display: none;
   }
 }
