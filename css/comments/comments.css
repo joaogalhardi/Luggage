@@ -48,7 +48,7 @@
   left: -12px;
   width: 16px;
   height: 14px;
-  background: url("../../images/itens/aspas1.svg") no-repeat;
+  background: url("../images/itens/aspas1.svg") no-repeat;
 }
 .review1 p:nth-child(1):after, .review2 p:nth-child(1):after, .review3 p:nth-child(1):after {
   content: "";
@@ -60,7 +60,7 @@
   align-self: start;
   width: 16px;
   height: 14px;
-  background: url("../../images/itens/aspas2.svg") no-repeat;
+  background: url("../images/itens/aspas2.svg") no-repeat;
 }
 
 

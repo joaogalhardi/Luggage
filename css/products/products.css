@@ -52,7 +52,7 @@
   justify-self: end;
   width: 24px;
   height: 24px; 
-  background: url("../../images/itens/heart.svg");
+  background: url("../images/itens/heart.svg");
   cursor: pointer;
 }
 
@@ -65,7 +65,7 @@
   justify-self: end;
   width: 24px;
   height: 24px; 
-  background: url("../../images/itens/heart-color.svg") no-repeat;
+  background: url("../images/itens/heart-color.svg") no-repeat;
   cursor: pointer;
 }
 

@@ -11,7 +11,7 @@
   top: 75%;
   width: 33px;
   height: 31px;
-  background: url("../../images/itens/Ellipse1.svg");
+  background: url("../images/itens/Ellipse1.svg");
 }
 
 .about-bg::after{
@@ -21,7 +21,7 @@
   top: 88%;
   width: 34px;
   height: 38px;
-  background: url("../../images/itens/Ellipse2.svg");
+  background: url("../images/itens/Ellipse2.svg");
 }
 
 
@@ -109,7 +109,7 @@
   display: block;
   width: 20px;
   height: 20px;
-  background: url("../../images/itens/play.svg") no-repeat;
+  background: url("../images/itens/play.svg") no-repeat;
 }
 
 .btn-2:hover {
